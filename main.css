@@ -21,25 +21,37 @@ body {
     position: relative;
     width:40%;
     height: 550px;
-    margin: 30px 400px ;
-    margin-bottom: 10px;
+    margin: 30px 30% ;
+    margin-bottom: 30px;
 }
 .profile_pic{
     position: absolute;
     width: 90%;
     margin: 5%;
+    border-radius: 100%;
 }
 .profile_pic:hover{
-    border-radius: 100%;
+    
     box-shadow: -7px 7px rgba(255, 255, 255, 0.7);
+
+}
+.profile_centre{
+    position: absolute;
+    width: 50%;
+    margin-top: 25%;
+    margin-left: 26%;
+}
+.profile_centre:hover{
+    border-radius: 100%;
+    box-shadow: -7px 7px rgba(14, 13, 13, 0.75);
 
 }
 .top_left_menu{
     transform:rotate(-33deg);
     color: white;
     position: absolute;
-    top: 18%;
-    left:23%;
+    top: 20%;
+    left:22%;
 
 
 }
@@ -56,21 +68,21 @@ body {
     color: white;
     position: absolute;
     bottom: 33%;
-    left:8%;
+    left:6%;
 
 }
 .bottom_right_menu{
     transform:rotate(-60deg);
     color: white;
     position: absolute;
-    bottom: 37%;
+    bottom: 35%;
     right:10%;
 
 }
 .bottom_menu{
     color: white;
     position: absolute;
-    bottom: 13%;
+    bottom: 12%;
     right:37%;
 
 
@@ -81,7 +93,7 @@ body {
 
 .resume{
     margin-left: 46%;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 60px;
     position: relative;
     height: 150px;
