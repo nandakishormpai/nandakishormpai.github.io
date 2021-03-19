@@ -1,7 +1,11 @@
 body {
     font-family: sans-serif;
+    color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .bg {
     /* The image used */
@@ -17,6 +21,23 @@ body {
     background-position:center;
     background-attachment: fixed;
     }
+
+hr{
+    width: 50%;
+    text-align:left;
+    margin-left: 0px;
+    height: 5px;
+    color: yellow;
+    background-color: white;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .profile_sun{
     position: relative;
     width:40%;
@@ -76,7 +97,7 @@ body {
     color: white;
     position: absolute;
     bottom: 35%;
-    right:10%;
+    right:9%;
 
 }
 .bottom_menu{
@@ -116,3 +137,37 @@ body {
     margin-top: 10px;
     margin-left: 5%;
 }
+
+.sub_sections{
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 50px;
+}
+
+.sec_head{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+.sub_sec{
+    margin-top: 15px;
+    background-color: rgba(31, 101, 230, 0.95);
+    padding: 1% 2%;
+    border-radius: 10px;
+}
+
+
+.sub_head{
+    font-size: 20px;
+    margin-bottom: 1%;
+    font-weight: 550;
+}
+.sub_head a{
+    font-weight: bold;
+}
+
+
+
