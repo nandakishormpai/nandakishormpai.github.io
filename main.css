@@ -160,6 +160,7 @@ a, a:hover, a:focus, a:active {
     background-color: rgba(31, 101, 230, 0.95);
     padding: 1% 2%;
     border-radius: 10px;
+    display: flex;
 }
 
 
