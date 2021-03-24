@@ -44,7 +44,7 @@ a, a:hover, a:focus, a:active {
 .profile_sun{
     position: relative;
     width:40%;
-    height: 550px;
+    height: 600px;
     margin: 30px 30% ;
     margin-bottom: 30px;
 }
@@ -106,7 +106,7 @@ a, a:hover, a:focus, a:active {
 .bottom_menu{
     color: white;
     position: absolute;
-    bottom: 12%;
+    bottom: 9%;
     right:37%;
 
 
@@ -161,6 +161,7 @@ a, a:hover, a:focus, a:active {
     padding: 1% 2%;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -186,6 +187,7 @@ a, a:hover, a:focus, a:active {
     float: left;
     width: 31%;
     margin-left: 1%;
+    padding-top: 20px;
 }
 .skill_name{
     text-align: center;
