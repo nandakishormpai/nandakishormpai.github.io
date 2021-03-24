@@ -1,3 +1,6 @@
+*{
+    box-sizing: content-box;
+}
 body {
     font-family: sans-serif;
     color: white;
@@ -168,6 +171,25 @@ a, a:hover, a:focus, a:active {
 .sub_head a{
     font-weight: bold;
 }
+
+.skill_logo{
+    width:30%;
+    height: 30%;
+    border-radius: 100%;
+    margin-left: 35%;
+}
+.skill_logo:hover{
+    box-shadow: -3px 3px rgba(14, 13, 13, 0.75);
+}
+.skill_block{
+    float: left;
+    width: 31%;
+    margin-left: 1%;
+}
+.skill_name{
+    text-align: center;
+}
+
 
 
 
