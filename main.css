@@ -12,7 +12,7 @@ html {
 
 .bg {
     /* The image used */
-    background-image: url("cover.jpg");
+    background-image: url("images/cover.jpg");
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -41,19 +41,68 @@ a, a:hover, a:focus, a:active {
     font-style: italic;
 }
 
+.email_link{
+    position: fixed;
+    transform:rotate(90deg);
+    right: -3%;
+    bottom: 30%;
+    display: flex;
+    color: rgb(12, 14, 2);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 13px;
+    border-radius: 20px;
+
+}
+.email_link:hover{
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+
+.socials_block{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 5%;
+    bottom: 55%;
+    width: 2%;
+    
+}
+
+.email_link a{
+    font-style: normal;
+}
+
+.icon{
+    border-radius: 50%;
+    padding: 10px 10px 8px 10px;
+    margin: 10px;
+    width:90%;
+    margin-left: 5%;
+    background-color: rgba(240, 241, 235, 0.9); 
+    filter: opacity(90%) brightness(90%);
+}
+
+.icon:hover{
+    filter: opacity(100%) brightness(100%);
+}
+
+
 .go_up{
     bottom: 20px;
-    right: 30px;
+    right: 4%;
     z-index: 99;
     position: fixed;
+    padding: 3px;
     width: 3%;
-    border-radius: 100%;
-    background-color: rgba(245, 247, 235, 0.8);
+    border-radius: 50%;
+    background-color: rgb(240, 241, 234);
+    filter: opacity(90%) brightness(90%);
 }
 
 .go_up:hover{
-    background-color: rgba(36, 228, 62, 0.8);
+    filter: opacity(100%) brightness(100%);
 }
+
 
 .profile_sun{
     position: relative;
