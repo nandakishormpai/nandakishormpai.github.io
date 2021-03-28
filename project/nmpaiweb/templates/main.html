@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>NMPAI</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'main.css' %}">
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'main.css' %}"">
     <!-- <script src='main.js'></script> -->
 </head>
 <body class="bg">
@@ -17,12 +17,21 @@
         <div class="top_left_menu pro_menu"><a href="#positions">Positions</a></div>
         <div class="top_right_menu pro_menu"><a href="#skills">Skills</a></div>
         <div class="bottom_menu pro_menu"><a href="#experience">Experience</a></div>
-        <div class="bottom_right_menu pro_menu"><a href="https://github.com/nandakishormpai2001" target="_blank">Projects</a></div>
+        <div class="bottom_right_menu pro_menu"><a href="#projects" target="_blank">Projects</a></div>
         <div class="bottom_left_menu pro_menu"><a href="#certifications">Certifications</a></div>
     </div>
-    <div class="resume">
-        <a href ="https://drive.google.com/file/d/1NkYQb26G4k1LCMhqfEvtQHaU4AQHFQAH/view?usp=sharing" target="_blank"><img src="{% static 'images/resume.png' %}" alt="resume" class="resume_logo"></a>
+    <div class="personal_info">
+        <div class="name_card info_card">
+            <div class="my_name">Nanda Kishor M Pai</div>
+            <div class="college">College of Engineering Trivandrum, Kerala</div>
+            <div class="branch">Computer Science & Engineering</div>
+            <div class="year">2019-23</div>
+        </div>
+        <div class="resume info_card">
+            <a href ="https://drive.google.com/file/d/1NkYQb26G4k1LCMhqfEvtQHaU4AQHFQAH/view?usp=sharing" target="_blank"><img src="{% static 'images/resume.png' %}" alt="resume" class="resume_logo"></a>
+        </div>
     </div>
+    
     
     <div class ="experience sub_sections">
         <a id="experience">
@@ -33,6 +42,91 @@
             <div class="more more_exp">
                 <div class="sub_desc">My work revolved around data extraction and analysis using NLP and Deep Learning Techniques</div>
                 <div class="sub_demo">A small demo on my work with my team is <a href="https://jiffyai.netlify.app/" target="_blank">here</a></div>
+            </div>
+        </div>
+    </div>
+    <div class ="projects sub_sections">
+        <a id="projects">
+        <div class="sec_head">Projects</div></a>
+        <hr>
+        <div class="sub_sec sub_project">
+            <div class="more">
+                <div class="project_block">
+                    <div class="project_video">
+                        <iframe src="https://drive.google.com/file/d/1CvN--lwpbg4nQEBX4Uaeygsl94hL5ioA/preview" ></iframe>
+                    </div>
+                    <div class="project_name">ASL Translator</div>
+                    <div class="tech_block">
+                        <div class="tech_used">Deep Learning</div>
+                        <div class="tech_used">Tensorflow</div>
+                        <div class="tech_used">OpenCV</div>
+                        <div class="tech_used">Python</div>
+                    </div>
+                    <div class="project_desc">
+                        An OpenCV project that aims at translating Sign Languages with real time alphabet detection using a CNN model trained on ASL dataset .
+                    </div>
+                    <a href="https://github.com/nandakishormpai2001/sign_language_interpreter" target="_blank"><img src="{% static 'images/codebase.jpg' %}" alt="code base" class="codebase"></a>
+                </div>
+                
+                <div class="project_block">
+                    <a href="https://github.com/AJAYK-01/KTU-Notifier" target="_blank"> <img src="https://raw.githubusercontent.com/AJAYK-01/ktu-notifier/master/screenshots/Workflow.png" alt="nlp filter" class="project_img"> </a>
+                    <div class="project_name">NLP Filter in University Notification bot</div>
+                    <div class="tech_block">
+                        <div class="tech_used">Tensorflow</div>
+                        <div class="tech_used">NLP</div>
+                        <div class="tech_used">Python</div>
+                    </div>
+                    <div class="project_desc">
+                        An opensource contribution that invloved development of an NLP model that segregates Relevant and Irrelevant University notifications that are sent to Users through a well made Telegram Bot @ktunotifbot.
+                    </div>
+                    <a href="https://github.com/AJAYK-01/KTU-Notifier" target="_blank"><img src="{% static 'images/codebase.jpg' %}" alt="code base" class="codebase"></a>
+                </div>
+                <div class="project_block">
+                    <div class="project_video">
+                        <iframe src="https://drive.google.com/file/d/10yUNvJVrNGbrKvriq2B-GIIa1Xj9wdv2/preview"></iframe>
+                    </div>
+                    <div class="project_name">Sleep Stare Alerter</div>
+                    <div class="tech_block">
+                        <div class="tech_used">OpenCV</div>
+                        <div class="tech_used">Python</div>
+                    </div>
+                    <div class="project_desc">
+                        An openCV project that helps developers to use laptops in a healthy way by keeping track of their use and blink rate. Sleeping during work and Continuous harmful staring is prevented.
+                    </div>
+                    <a href="https://github.com/nandakishormpai2001/Sleep_Stare_Alerter" target="_blank"><img src="{% static 'images/codebase.jpg' %}" alt="code base" class="codebase"></a>
+                </div>
+                <div class="project_block">
+                    <a href="https://hacker-noobs.herokuapp.com" target="_blank"> <img src="{% static 'images/hackernoobs.png' %}" alt="hackernoobs" class="project_img"> </a>
+                    <div class="project_name">Hacker Noobs Website</div>
+                    <div class="tech_block">
+                        <div class="tech_used">Flask</div>
+                        <div class="tech_used">HTML</div>
+                        <div class="tech_used">CSS</div>
+                        <div class="tech_used">MySQL</div>
+                        <div class="tech_used">Python</div>
+                    </div>
+                    <div class="project_desc">
+                        The project aimed at development of a flask based website with an active database hosted through Heroku with log in and other features for showcasing projects of my peers.
+                    </div>
+                    <a href="https://github.com/nandakishormpai2001/Hacker_Noobs_Website_Flask" target="_blank"><img src="{% static 'images/codebase.jpg' %}" alt="code base" class="codebase"></a>
+                </div>
+                <div class="project_block">
+                    <div class="project_video">
+                        <iframe src="https://drive.google.com/file/d/1LAu5P9s4PbRt_oiykzEzIZhzL4iSn-Jq/preview" ></iframe>
+                    </div>
+                    <div class="project_name">Rock Paper Scissors with AI</div>
+                    <div class="tech_block">
+                        <div class="tech_used">Deep Learning</div>
+                        <div class="tech_used">Tensorflow</div>
+                        <div class="tech_used">OpenCV</div>
+                        <div class="tech_used">Python</div>
+                    </div>
+                    <div class="project_desc">
+                        An OpenCV Based Game which uses deep learning to build a model that dynamically predicts user move.
+                    </div>
+                    <a href="https://github.com/Harikrishnan6336/Rock_Paper_Scissors" target="_blank"><img src="{% static 'images/codebase.jpg' %}" alt="code base" class="codebase"></a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -87,8 +181,8 @@
                     <div class="skill_name">Tensorflow</div>
                 </div>
                 <div class="skill_block">
-                    <img src="{% static 'images/keras.png' %}" alt="keras" class="skill_logo">
-                    <div class="skill_name">Keras</div>
+                    <img src="{% static 'images/flask.png' %}" alt="keras" class="skill_logo">
+                    <div class="skill_name">Flask</div>
                 </div>
                 <div class="skill_block">
                     <img src="{% static 'images/opencv.png' %}" alt="opencv" class="skill_logo">
@@ -105,7 +199,7 @@
             </div>
         </div>
     </div>
-    <div class ="experience sub_sections">
+    <div class ="positions sub_sections">
         <a id="positions">
         <div class="sec_head">Positions</div></a>
         <hr>
@@ -154,8 +248,28 @@
             </div>
         </div>
     </div>
+    
     <footer>
+        <div class="email_link">
+            <a href="mailto:nandakishormpai@gmail.com">nandakishormpai@gmail.com</a>
+        </div>
+        <div class="socials_block">
+            <div class="icon">
+                <a href="https://github.com/nandakishormpai2001" target="_blank"><img src="{% static 'images/github_social.svg' %}" class="social_img" alt="github"></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/nanda-kishor-m-pai-3b7b6519a" target="_blank"><img src="{% static 'images/linkedin_social.svg' %}" class="social_img" alt="linkedin"></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/nandakishormpai/" target="_blank"><img src="{% static 'images/instagram_social.svg' %}" class="social_img" alt="insta"></a>
+            </div>
+            <div class="icon">
+                <a href="https://twitter.com/nm22by7" target="_blank"><img src="{% static 'images/twitter_social.svg' %}" class="social_img" alt="twitter"></a>
+            </div>
+        </div>
         <a href="#top"><img class="go_up" src="{% static 'images/arrowup.png' %}"></a>
+        <br>
+        <br>
     </footer>
 
     
