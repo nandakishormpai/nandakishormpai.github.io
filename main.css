@@ -176,31 +176,58 @@ a, a:hover, a:focus, a:active {
 .pro_menu{
     font-size: 24px;
 }
+.personal_info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30%;
+    width: 40%;
+    margin-top: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background: rgba(24, 83, 194, 0.95);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
 
+}
+.name_card{
+    width: 70%;
+    padding-top: 20px;
+}
+
+.my_name{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.college,.branch{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.year{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 .resume{
-    margin-left: 46%;
-    margin-top: 70px;
-    margin-bottom: 60px;
-    position: relative;
-    height: 150px;
-    width:8%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    width:25%;
     background-color: rgba(228, 243, 151, 0.9);
-    
-    border-radius: 7%;
+    border-radius: 10%;
+}
+.info_card{
+    float: left;
 }
 .resume:hover{
-    border-radius: 5%;
+    border-radius: 10%;
     background-color: rgba(238, 248, 187, 0.9);
-    box-shadow: -3px 3px rgba(255, 231, 14, 0.8);
+    box-shadow: -5px 5px rgba(3, 32, 87, 0.8);
 
 }
 
 .resume_logo{
-    position: absolute;
-    width:100px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-left: 5%;
+    width:70%;
+    margin-top: 17px;
 }
 
 .sub_sections{
@@ -219,7 +246,7 @@ a, a:hover, a:focus, a:active {
 
 .sub_sec{
     margin-top: 15px;
-    background-color: rgba(31, 101, 230, 0.95);
+    background-color: rgba(24, 83, 194, 0.95);
     padding: 1% 2%;
     border-radius: 10px;
     display: flex;
