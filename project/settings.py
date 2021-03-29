@@ -25,7 +25,7 @@ SECRET_KEY = '3*5&9@*vw6(6m*0ez2jp+t8i8149#j9w3z7w#$^h=(qx1)#+5v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nandakishormpai.herokuapp.com','0.0.0.0:5000','127.0.0.1:8000','127.0.0.1']
+ALLOWED_HOSTS = ['nandakishormpai.herokuapp.com','0.0.0.0:5000','127.0.0.1:8000','127.0.0.1','0.0.0.0']
 
 
 # Application definition
