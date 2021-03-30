@@ -12,7 +12,7 @@ html {
 
 .bg {
     /* The image used */
-    background-image: url("images/cover.jpg");
+    background-image: url("images/covernew.jpg");
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -184,7 +184,7 @@ a, a:hover, a:focus, a:active {
     margin-top: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
-    background: rgba(24, 83, 194, 0.95);
+    background: rgba(35, 34, 43, 0.95);
     text-align: center;
     font-weight: 600;
     padding: 10px;
@@ -247,7 +247,7 @@ a, a:hover, a:focus, a:active {
 
 .sub_sec{
     margin-top: 15px;
-    background-color: rgba(24, 83, 194, 0.95);
+    background-color: rgba(35, 34, 43, 0.95);
     padding: 1% 2%;
     border-radius: 10px;
     display: flex;
@@ -265,7 +265,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .sub_desc,.sub_demo{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Rubik', sans-serif;
     font-size: 18px;
     font-weight: 600;
 }
@@ -303,6 +303,7 @@ a, a:hover, a:focus, a:active {
 
 .project_name{
     font-size: 24px;
+    font-family: 'Expletus Sans', cursive;
 }
 
 .cert_block{
@@ -364,6 +365,7 @@ a, a:hover, a:focus, a:active {
     margin: 5px 3px;
     padding: 4px 6px;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
     font-weight: bold;
     width:auto;
 }
