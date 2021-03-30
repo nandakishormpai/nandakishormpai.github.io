@@ -29,7 +29,7 @@ hr{
     width: 50%;
     text-align:left;
     margin-left: 0px;
-    height: 5px;
+    height: 0.5vh;
     color: yellow;
     background-color: white;
 }
@@ -44,7 +44,7 @@ a, a:hover, a:focus, a:active {
 .email_link{
     position: fixed;
     transform:rotate(90deg);
-    right: -45px;
+    right: -3vw;
     bottom: 50%;
     display: flex;
     color: rgb(12, 14, 2);
@@ -62,7 +62,7 @@ a, a:hover, a:focus, a:active {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 75px;
+    left: 4vw;
     bottom: 35%;
     width: 2%;
     
@@ -89,9 +89,9 @@ a, a:hover, a:focus, a:active {
 
 .go_up{
     bottom: 20px;
-    right: 55px;
+    right: 3.5vw;
     position: fixed;
-    padding: 3px;
+    padding:0.3vw;
     width: 3%;
     border-radius: 50%;
     background-color: rgb(240, 241, 234);
@@ -106,33 +106,36 @@ a, a:hover, a:focus, a:active {
 .profile_sun{
     position: relative;
     width:40%;
-    height: 600px;
     margin: 30px 30% ;
     margin-bottom: 30px;
+    padding-top: 40%;
 }
 .profile_pic{
     position: absolute;
     width: 90%;
-    margin: 5%;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+    left:5%;
     border-radius: 100%;
 }
 .profile_centre{
     position: absolute;
     width: 50%;
-    margin-top: 25%;
-    margin-left: 26%;
+    top: 25%;
+    left: 25.5%;
 }
 .profile_centre:hover{
     border-radius: 100%;
-    box-shadow: -7px 7px rgba(14, 13, 13, 0.75);
+    box-shadow: -0.4vw 0.4vw rgba(14, 13, 13, 0.75);
 
 }
 .top_left_menu{
     transform:rotate(-33deg);
     color: rgb(14, 13, 13);
     position: absolute;
-    top: 20%;
-    left:22%;
+    top: 18%;
+    left:20%;
 
 
 }
@@ -149,7 +152,7 @@ a, a:hover, a:focus, a:active {
     color: rgb(14, 13, 13);
     position: absolute;
     bottom: 35%;
-    left:4%;
+    left:2.5%;
 
 }
 .bottom_right_menu{
@@ -157,7 +160,7 @@ a, a:hover, a:focus, a:active {
     color: rgb(14, 13, 13);
     position: absolute;
     bottom: 37%;
-    right:8%;
+    right:6%;
 
 }
 .bottom_menu{
@@ -169,6 +172,7 @@ a, a:hover, a:focus, a:active {
 }
 .pro_menu{
     font-size: 24px;
+    font-size: 2vw;
 }
 .personal_info{
     display: flex;
@@ -193,21 +197,21 @@ a, a:hover, a:focus, a:active {
 }
 
 .my_name{
-    font-size: 45px;
+    font-size: 4vw;
     font-family: 'Expletus Sans', cursive;
     margin-bottom: 5px;
 }
 .college,.branch{
-    font-size: 26px;
+    font-size: 2vw;
     font-family: 'Hind Guntur', sans-serif;
 }
 .year{
-    font-size: 20px;
+    font-size:1.5vw;
     font-family: 'Hind Guntur', sans-serif;
 }
 .resume{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     margin-left: 42.5%;
     width:15%;
     background-color: rgba(228, 243, 151, 0.9);
@@ -222,7 +226,8 @@ a, a:hover, a:focus, a:active {
 
 .resume_logo{
     width:80%;
-    margin-top: 10px;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
 }
 
 .sub_sections{
@@ -232,7 +237,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .sec_head{
-    font-size: 35px;
+    font-size: 2.5vw;
     font-family: 'Expletus Sans', cursive;
     font-style: normal;
     font-weight: bold;
@@ -250,7 +255,7 @@ a, a:hover, a:focus, a:active {
 
 
 .sub_head{
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-bottom: 1%;
     font-family: 'Bree Serif', serif;
     font-weight: 550;
@@ -261,7 +266,7 @@ a, a:hover, a:focus, a:active {
 
 .sub_desc,.sub_demo{
     font-family:'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 1.25vw;
     font-weight: 600;
 }
 
@@ -288,7 +293,7 @@ a, a:hover, a:focus, a:active {
 }
 .skill_name{
     font-family: 'Hind Guntur', sans-serif;
-    font-size: 18px;
+    font-size: 1.2vw;
 }
 .cert_name, .project_name{
     color: black;
@@ -297,11 +302,12 @@ a, a:hover, a:focus, a:active {
 }
 
 .project_name{
-    font-size: 24px;
+    font-size: 1.5vw;
     font-family: 'Expletus Sans', cursive;
 }
 .cert_name{
     font-family: 'Bree Serif', serif;
+    font-size: 1.1vw;
 }
 
 .cert_block{
@@ -367,13 +373,14 @@ a, a:hover, a:focus, a:active {
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     width:auto;
+    font-size: 1.1vw;
 }
 
 .project_desc{
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Hind Guntur', sans-serif;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 600;
     color: rgb(25, 26, 24);
     float: right;
