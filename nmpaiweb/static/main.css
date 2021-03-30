@@ -37,19 +37,19 @@ hr{
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+    font-family: 'Expletus Sans', cursive;
     font-weight: bold;
-    font-style: italic;
 }
 
 .email_link{
     position: fixed;
     transform:rotate(90deg);
-    right: -4%;
+    right: -45px;
     bottom: 30%;
     display: flex;
     color: rgb(12, 14, 2);
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 13px;
+    padding: 0.9%;
     border-radius: 20px;
 
 }
@@ -62,7 +62,7 @@ a, a:hover, a:focus, a:active {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 5%;
+    right: 75px;
     bottom: 55%;
     width: 2%;
     
@@ -89,8 +89,7 @@ a, a:hover, a:focus, a:active {
 
 .go_up{
     bottom: 20px;
-    right: 4%;
-    z-index: 99;
+    right: 55px;
     position: fixed;
     padding: 3px;
     width: 3%;
@@ -116,11 +115,6 @@ a, a:hover, a:focus, a:active {
     width: 90%;
     margin: 5%;
     border-radius: 100%;
-}
-.profile_pic:hover{
-    
-    box-shadow: -7px 7px rgba(255, 255, 255, 0.7);
-
 }
 .profile_centre{
     position: absolute;
@@ -178,9 +172,10 @@ a, a:hover, a:focus, a:active {
 }
 .personal_info{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 25%;
+    width: 50%;
     margin-top: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
@@ -191,33 +186,32 @@ a, a:hover, a:focus, a:active {
 
 }
 .name_card{
-    width: 70%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
     padding-top: 20px;
 }
 
 .my_name{
     font-size: 45px;
     font-family: 'Expletus Sans', cursive;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .college,.branch{
     font-size: 26px;
-    margin-bottom: 5px;
+    font-family: 'Hind Guntur', sans-serif;
 }
 .year{
     font-size: 20px;
-    margin-bottom: 5px;
+    font-family: 'Hind Guntur', sans-serif;
 }
 .resume{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5%;
-    width:25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 42.5%;
+    width:15%;
     background-color: rgba(228, 243, 151, 0.9);
     border-radius: 10%;
-}
-.info_card{
-    float: left;
 }
 .resume:hover{
     border-radius: 10%;
@@ -227,8 +221,8 @@ a, a:hover, a:focus, a:active {
 }
 
 .resume_logo{
-    width:70%;
-    margin-top: 17px;
+    width:80%;
+    margin-top: 10px;
 }
 
 .sub_sections{
@@ -258,6 +252,7 @@ a, a:hover, a:focus, a:active {
 .sub_head{
     font-size: 20px;
     margin-bottom: 1%;
+    font-family: 'Bree Serif', serif;
     font-weight: 550;
 }
 .sub_head a{
@@ -277,9 +272,6 @@ a, a:hover, a:focus, a:active {
     margin-left: 30%;
     margin-right: 30%;
 }
-.skill_logo:hover{
-    box-shadow: -3px 3px rgba(14, 13, 13, 0.75);
-}
 .more,.tech_used{
     display: flex;
     flex-wrap: wrap;
@@ -294,7 +286,10 @@ a, a:hover, a:focus, a:active {
     text-align: center;
     font-weight: bold;
 }
-
+.skill_name{
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 18px;
+}
 .cert_name, .project_name{
     color: black;
     margin: 5px 3px;
@@ -305,10 +300,14 @@ a, a:hover, a:focus, a:active {
     font-size: 24px;
     font-family: 'Expletus Sans', cursive;
 }
+.cert_name{
+    font-family: 'Bree Serif', serif;
+}
 
 .cert_block{
     width: 19%;
     margin-left: 1%;
+    margin-bottom: 10px;
     padding-top: 20px;
     background-color: rgba(245, 247, 235, 0.8);
     border-radius: 10px;
@@ -373,7 +372,7 @@ a, a:hover, a:focus, a:active {
 .project_desc{
     margin-left: 5%;
     margin-right: 5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Hind Guntur', sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: rgb(25, 26, 24);
