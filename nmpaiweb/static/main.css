@@ -346,7 +346,7 @@ a, a:hover, a:focus, a:active {
 
 .project_img,.project_video{
     width:90%;
-    height: 300px;
+    height: 17vw;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 7px;
@@ -355,7 +355,7 @@ a, a:hover, a:focus, a:active {
 
 .project_video iframe{
     width: 100%;
-    height: 300px;
+    height: 17vw;
 }
 
 .tech_block{
