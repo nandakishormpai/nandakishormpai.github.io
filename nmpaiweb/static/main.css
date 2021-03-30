@@ -197,6 +197,7 @@ a, a:hover, a:focus, a:active {
 
 .my_name{
     font-size: 45px;
+    font-family: 'Expletus Sans', cursive;
     margin-bottom: 10px;
 }
 .college,.branch{
@@ -238,7 +239,7 @@ a, a:hover, a:focus, a:active {
 
 .sec_head{
     font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Expletus Sans', cursive;
     font-style: normal;
     font-weight: bold;
 }
