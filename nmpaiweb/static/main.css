@@ -433,7 +433,7 @@ a, a:hover, a:focus, a:active {
     .twitter_icon{
         position: absolute;
         bottom: 1vh;
-        right:5%;
+        right:4%;
         width:5vw;
         background-color: rgba(240, 241, 235, 0.9); 
         filter: opacity(90%) brightness(90%);
@@ -463,7 +463,7 @@ a, a:hover, a:focus, a:active {
     .insta_icon{
         position: absolute;
         bottom: 1vh;
-        right:15%;
+        right:14%;
         width:5vw;
         background-color: rgba(240, 241, 235, 0.9); 
         filter: opacity(90%) brightness(90%);
@@ -494,10 +494,9 @@ a, a:hover, a:focus, a:active {
 
     .profile_sun{
         position: relative;
-        width:40%;
-        margin: 30px 30% ;
-        margin-bottom: 30px;
-        padding-top: 40%;
+        width:80%;
+        margin: 7vh 10% ;
+        padding-top: 80%;
     }
     .profile_pic{
         position: absolute;
@@ -523,8 +522,8 @@ a, a:hover, a:focus, a:active {
         transform:rotate(-33deg);
         color: rgb(14, 13, 13);
         position: absolute;
-        top: 18%;
-        left:20%;
+        top: 17%;
+        left:17%;
 
 
     }
@@ -532,36 +531,36 @@ a, a:hover, a:focus, a:active {
         transform:rotate(33deg);
         color: rgb(14, 13, 13);
         position: absolute;
-        top: 20%;
-        left:66%;
+        top: 18%;
+        left:64%;
     }
 
     .bottom_left_menu{
         transform:rotate(56deg);
         color: rgb(14, 13, 13);
         position: absolute;
-        bottom: 35%;
-        left:2.5%;
+        bottom: 36%;
+        left:-1%;
 
     }
     .bottom_right_menu{
         transform:rotate(-60deg);
         color: rgb(14, 13, 13);
         position: absolute;
-        bottom: 37%;
-        right:6%;
+        bottom: 38%;
+        right:3%;
 
     }
     .bottom_menu{
         color: rgb(14, 13, 13);
         position: absolute;
-        bottom: 12%;
-        right:35%;
+        bottom: 11%;
+        right:31%;
         
     }
     .pro_menu{
-        font-size: 24px;
-        font-size: 2vw;
+        font-size: 12px;
+        font-size: 4.5vw;
     }
     .personal_info{
         display: flex;
