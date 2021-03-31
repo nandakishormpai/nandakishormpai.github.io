@@ -619,9 +619,10 @@ a, a:hover, a:focus, a:active {
     }
 
     .sub_sections{
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
 
     .sec_head{
@@ -633,10 +634,10 @@ a, a:hover, a:focus, a:active {
 
 
     .sub_sec{
-        margin-top: 15px;
+        margin-top: 1vh;
         background-color: rgba(35, 34, 43, 0.95);
-        padding: 1% 2%;
-        border-radius: 10px;
+        padding: 2%;
+        border-radius: 1.5vw;
         display: flex;
         flex-direction: column;
     }
