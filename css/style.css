@@ -450,7 +450,7 @@ a, a:hover, a:focus, a:active {
     }
 
     .codebase:hover{
-        box-shadow: -0.3vw 1vh rgba(14, 13, 13, 0.75);
+        box-shadow: -0.2vw 0.5vh rgba(14, 13, 13, 0.75);
     }
 }
 @media (max-width: 767px) {
