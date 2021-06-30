@@ -1,865 +1,895 @@
-*{
-    box-sizing: content-box;
+* {
+  box-sizing: content-box;
 }
 body {
-    font-family: sans-serif;
-    color: white;
+  font-family: sans-serif;
+  color: white;
 }
 /* Center the loader */
 #loader {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid rgba(35, 34, 43, 1);
-    border-radius: 50%;
-    border-top: 16px solid #fcfeff;
-    border-bottom: 16px solid #fcfeff;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-  }
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid rgba(35, 34, 43, 1);
+  border-radius: 50%;
+  border-top: 16px solid #fcfeff;
+  border-bottom: 16px solid #fcfeff;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 .bg {
-    /* The image used */
-    background-image: url("images/covernew.jpg");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;
-    background-attachment: fixed;
-    }
+  /* The image used */
+  background-image: url("images/covernew.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-hr{
+hr {
+  width: 50%;
+  text-align: left;
+  margin-left: 0px;
+  height: 0.5vh;
+  color: yellow;
+  background-color: white;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Expletus Sans", cursive;
+  font-weight: bold;
+}
+@media screen and (min-width: 767px) {
+  .email_link {
+    position: fixed;
+    transform: rotate(90deg);
+    right: -3vw;
+    bottom: 50%;
+    display: flex;
+    color: rgb(12, 14, 2);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.9%;
+    border-radius: 20px;
+    font-size: 1.1vw;
+  }
+  .email_link:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .socials_block {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 4vw;
+    bottom: 35%;
+    width: 16%;
+  }
+
+  .email_link a {
+    font-style: normal;
+  }
+
+  .icon {
+    position: relative;
+    width: 15%;
+    margin: 1vw;
+    border-radius: 50%;
+    background-color: rgba(240, 241, 235, 0.9);
+    padding: 10px 10px 5px 10px;
+    filter: opacity(90%) brightness(90%);
+  }
+
+  .social_img {
+    top: 0;
+    left: 0;
+    padding: 10px 10px 10px 10px;
+    padding-left: 100%;
+    margin-left: 5%;
+    margin-top: 1.3vh;
+    background-color: rgba(240, 241, 235, 1);
+    position: absolute;
+    border-radius: 1vw;
+    color: black;
+    z-index: -5;
+    width: 10vw;
+    display: none;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+  }
+
+  .icon:hover {
+    background-color: rgba(240, 241, 235, 1);
+    filter: opacity(100%) brightness(100%);
+  }
+
+  .icon:hover > .social_img {
+    display: block;
+  }
+  .go_up {
+    bottom: 20px;
+    right: 3.5vw;
+    position: fixed;
+    padding: 0.3vw;
+    width: 3%;
+    border-radius: 50%;
+    background-color: rgb(240, 241, 234);
+    filter: opacity(90%) brightness(90%);
+  }
+
+  .go_up:hover {
+    filter: opacity(100%) brightness(100%);
+  }
+
+  .profile_sun {
+    position: relative;
+    width: 40%;
+    margin: 30px 30%;
+    margin-bottom: 30px;
+    padding-top: 40%;
+  }
+  .profile_pic {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+    border-radius: 100%;
+  }
+  .profile_centre {
+    position: absolute;
     width: 50%;
-    text-align:left;
-    margin-left: 0px;
-    height: 0.5vh;
-    color: yellow;
-    background-color: white;
-}
+    top: 25%;
+    left: 25.5%;
+  }
+  .profile_centre:hover {
+    border-radius: 100%;
+    box-shadow: -0.3vw 0.3vw rgba(14, 13, 13, 0.75);
+  }
+  .top_left_menu {
+    transform: rotate(-33deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    top: 18%;
+    left: 20%;
+  }
+  .top_right_menu {
+    transform: rotate(33deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    top: 20%;
+    left: 66%;
+  }
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-    font-family: 'Expletus Sans', cursive;
+  .bottom_left_menu {
+    transform: rotate(56deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    bottom: 35%;
+    left: 2.5%;
+  }
+  .bottom_right_menu {
+    transform: rotate(-60deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    bottom: 37%;
+    right: 6%;
+  }
+  .bottom_menu {
+    color: rgb(14, 13, 13);
+    position: absolute;
+    bottom: 12%;
+    right: 35%;
+  }
+  .pro_menu {
+    font-size: 24px;
+    font-size: 2vw;
+  }
+  .personal_info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 10px;
+    background: rgba(35, 34, 43, 0.95);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .name_card {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 20px;
+  }
+
+  .my_name {
+    font-size: 4vw;
+    font-family: "Expletus Sans", cursive;
+    margin-bottom: 5px;
+  }
+  .college,
+  .branch {
+    font-size: 2vw;
+    font-family: "Hind Guntur", sans-serif;
+  }
+  .year {
+    font-size: 1.5vw;
+    font-family: "Hind Guntur", sans-serif;
+  }
+  .resume {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 42.5%;
+    width: 15%;
+    background-color: rgba(228, 243, 151, 0.9);
+    border-radius: 10%;
+  }
+  .resume:hover {
+    border-radius: 10%;
+    background-color: rgba(238, 248, 187, 0.9);
+    box-shadow: -5px 5px rgba(3, 32, 87, 0.8);
+  }
+
+  .resume_logo {
+    width: 80%;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+  }
+
+  .sub_sections {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+  }
+
+  .sec_head {
+    font-size: 2.5vw;
+    font-family: "Expletus Sans", cursive;
+    font-style: normal;
     font-weight: bold;
-}
-@media screen and (min-width:767px){
-    
-    .email_link{
-        position: fixed;
-        transform:rotate(90deg);
-        right: -3vw;
-        bottom: 50%;
-        display: flex;
-        color: rgb(12, 14, 2);
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 0.9%;
-        border-radius: 20px;
-        font-size: 1.1vw;
+    margin-bottom: -0.75vh;
+  }
 
-    }
-    .email_link:hover{
-        background-color: rgba(255, 255, 255, 1.0);
-    }
+  .sub_sec {
+    margin-top: 15px;
+    background-color: rgba(35, 34, 43, 0.95);
+    padding: 1% 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .sub_head {
+    font-size: 1.5vw;
+    margin-bottom: 1%;
+    font-family: "Bree Serif", serif;
+    font-weight: 550;
+  }
+  .sub_head a {
+    font-weight: bold;
+  }
 
-    .socials_block{
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        left: 4vw;
-        bottom: 35%;
-        width: 2%;
-        
-    }
+  .sub_desc,
+  .sub_demo {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.25vw;
+    font-weight: 600;
+  }
 
-    .email_link a{
-        font-style: normal;
-    }
+  .skill_logo {
+    width: 40%;
+    height: auto;
+    border-radius: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .more,
+  .tech_used {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill_block {
+    width: 19%;
+    margin-left: 1%;
+    padding-top: 10px;
+  }
+  .skill_name,
+  .cert_name,
+  .project_name {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .skill_name {
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 1.2vw;
+  }
+  .cert_name,
+  .project_name {
+    color: black;
+    margin: 5px 3px;
+    padding: 1px 1px;
+  }
 
-    .icon{
-        border-radius: 50%;
-        padding: 10px 10px 5px 10px;
-        margin: 1vw;
-        width:90%;
-        margin-left: 5%;
-        background-color: rgba(240, 241, 235, 0.9); 
-        filter: opacity(90%) brightness(90%);
-    }
+  .project_name {
+    font-size: 1.5vw;
+    font-family: "Expletus Sans", cursive;
+  }
+  .cert_name {
+    font-family: "Bree Serif", serif;
+    font-size: 1.1vw;
+  }
 
-    .icon:hover{
-        filter: opacity(100%) brightness(100%);
-    }
+  .cert_block {
+    width: 19%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    background-color: rgba(245, 247, 235, 0.8);
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
 
+  .cert_block:hover {
+    box-shadow: -5px 5px rgba(14, 13, 13, 0.75);
+  }
 
-    .go_up{
-        bottom: 20px;
-        right: 3.5vw;
-        position: fixed;
-        padding:0.3vw;
-        width: 3%;
-        border-radius: 50%;
-        background-color: rgb(240, 241, 234);
-        filter: opacity(90%) brightness(90%);
-    }
+  .cert_img {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 7px;
+    border-color: black;
+  }
 
-    .go_up:hover{
-        filter: opacity(100%) brightness(100%);
-    }
+  .project_block {
+    width: 47%;
+    margin-left: 3%;
+    margin-bottom: 10vh;
+    padding-top: 20px;
+    background-color: rgba(245, 247, 235, 0.8);
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
 
+  .project_img,
+  .project_video {
+    width: 90%;
+    height: 17vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 7px;
+    border-color: black;
+  }
 
-    .profile_sun{
-        position: relative;
-        width:40%;
-        margin: 30px 30% ;
-        margin-bottom: 30px;
-        padding-top: 40%;
-    }
-    .profile_pic{
-        position: absolute;
-        width: 90%;
-        top: 5%;
-        bottom: 5%;
-        right: 5%;
-        left:5%;
-        border-radius: 100%;
-    }
-    .profile_centre{
-        position: absolute;
-        width: 50%;
-        top: 25%;
-        left: 25.5%;
-    }
-    .profile_centre:hover{
-        border-radius: 100%;
-        box-shadow: -0.3vw 0.3vw rgba(14, 13, 13, 0.75);
+  .project_video iframe {
+    width: 100%;
+    height: 17vw;
+  }
 
-    }
-    .top_left_menu{
-        transform:rotate(-33deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        top: 18%;
-        left:20%;
+  .tech_block {
+    margin-left: 5%;
+  }
 
+  .tech_used {
+    float: left;
+    border-radius: 5px;
+    background-color: rgba(25, 27, 31, 0.8);
+    color: rgb(240, 241, 234);
+    margin: 5px 3px;
+    padding: 4px 6px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    width: auto;
+    font-size: 1.1vw;
+  }
 
-    }
-    .top_right_menu{
-        transform:rotate(33deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        top: 20%;
-        left:66%;
-    }
+  .project_desc {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgb(25, 26, 24);
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    .bottom_left_menu{
-        transform:rotate(56deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        bottom: 35%;
-        left:2.5%;
+  .codebase {
+    border-radius: 0.5vw;
+    width: 20%;
+    margin-left: 75%;
+    bottom: 10px;
+    filter: brightness(110%);
+  }
 
-    }
-    .bottom_right_menu{
-        transform:rotate(-60deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        bottom: 37%;
-        right:6%;
-
-    }
-    .bottom_menu{
-        color: rgb(14, 13, 13);
-        position: absolute;
-        bottom: 12%;
-        right:35%;
-        
-    }
-    .pro_menu{
-        font-size: 24px;
-        font-size: 2vw;
-    }
-    .personal_info{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 25%;
-        width: 50%;
-        margin-top: 20px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        border-radius: 10px;
-        background: rgba(35, 34, 43, 0.95);
-        text-align: center;
-        font-weight: 600;
-        padding: 10px;
-
-    }
-    .name_card{
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        padding-top: 20px;
-    }
-
-    .my_name{
-        font-size: 4vw;
-        font-family: 'Expletus Sans', cursive;
-        margin-bottom: 5px;
-    }
-    .college,.branch{
-        font-size: 2vw;
-        font-family: 'Hind Guntur', sans-serif;
-    }
-    .year{
-        font-size:1.5vw;
-        font-family: 'Hind Guntur', sans-serif;
-    }
-    .resume{
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-        margin-left: 42.5%;
-        width:15%;
-        background-color: rgba(228, 243, 151, 0.9);
-        border-radius: 10%;
-    }
-    .resume:hover{
-        border-radius: 10%;
-        background-color: rgba(238, 248, 187, 0.9);
-        box-shadow: -5px 5px rgba(3, 32, 87, 0.8);
-
-    }
-
-    .resume_logo{
-        width:80%;
-        margin-top: 3vh;
-        margin-bottom: 1vh;
-    }
-
-    .sub_sections{
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 50px;
-    }
-
-    .sec_head{
-        font-size: 2.5vw;
-        font-family: 'Expletus Sans', cursive;
-        font-style: normal;
-        font-weight: bold;
-        margin-bottom: -0.75vh;
-    }
-
-
-    .sub_sec{
-        margin-top: 15px;
-        background-color: rgba(35, 34, 43, 0.95);
-        padding: 1% 2%;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .sub_head{
-        font-size: 1.5vw;
-        margin-bottom: 1%;
-        font-family: 'Bree Serif', serif;
-        font-weight: 550;
-    }
-    .sub_head a{
-        font-weight: bold;
-    }
-
-    .sub_desc,.sub_demo{
-        font-family:'Rubik', sans-serif;
-        font-size: 1.25vw;
-        font-weight: 600;
-    }
-
-    .skill_logo{
-        width:40%;
-        height: auto;
-        border-radius: 100%;
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-    .more,.tech_used{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .skill_block{
-        width: 19%;
-        margin-left: 1%;
-        padding-top: 10px;
-    }
-    .skill_name , .cert_name,.project_name{
-        margin-top: 5px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .skill_name{
-        font-family: 'Hind Guntur', sans-serif;
-        font-size: 1.2vw;
-    }
-    .cert_name, .project_name{
-        color: black;
-        margin: 5px 3px;
-        padding: 1px 1px;
-    }
-
-    .project_name{
-        font-size: 1.5vw;
-        font-family: 'Expletus Sans', cursive;
-    }
-    .cert_name{
-        font-family: 'Bree Serif', serif;
-        font-size: 1.1vw;
-    }
-
-    .cert_block{
-        width: 19%;
-        margin-left: 1%;
-        margin-bottom: 10px;
-        padding-top: 20px;
-        background-color: rgba(245, 247, 235, 0.8);
-        border-radius: 10px;
-        padding-bottom: 10px;
-    }
-
-    .cert_block:hover{
-        box-shadow: -5px 5px rgba(14, 13, 13, 0.75);
-    }
-
-    .cert_img{
-        width:90%;
-        height: auto;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 7px;
-        border-color: black;
-    }
-
-    .project_block{
-        width: 47%;
-        margin-left: 3%;
-        margin-bottom: 10vh;
-        padding-top: 20px;
-        background-color: rgba(245, 247, 235, 0.8);
-        border-radius: 10px;
-        padding-bottom: 10px;
-
-    }
-
-    .project_img,.project_video{
-        width:90%;
-        height: 17vw;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 7px;
-        border-color: black;
-    }
-
-    .project_video iframe{
-        width: 100%;
-        height: 17vw;
-    }
-
-    .tech_block{
-        margin-left: 5%;
-    }
-
-    .tech_used{
-        float: left;
-        border-radius: 5px;
-        background-color: rgba(25, 27, 31, 0.8);
-        color: rgb(240, 241, 234);
-        margin: 5px 3px;
-        padding: 4px 6px;
-        text-align: center;
-        font-family: 'Rubik', sans-serif;
-        font-weight: bold;
-        width:auto;
-        font-size: 1.1vw;
-    }
-
-    .project_desc{
-        margin-left: 5%;
-        margin-right: 5%;
-        font-family: 'Hind Guntur', sans-serif;
-        font-size: 1.2vw;
-        font-weight: 600;
-        color: rgb(25, 26, 24);
-        float: right;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .codebase{
-        border-radius: 0.5vw;
-        width: 20%;
-        margin-left: 75%;
-        bottom:10px;
-        filter: brightness(110%);
-    }
-
-    .codebase:hover{
-        box-shadow: -0.2vw 0.5vh rgba(14, 13, 13, 0.75);
-    }
+  .codebase:hover {
+    box-shadow: -0.2vw 0.5vh rgba(14, 13, 13, 0.75);
+  }
 }
 @media (max-width: 767px) {
-    hr{
-        width: 50%;
-        text-align:left;
-        margin-left: 0px;
-        height: 0.25vh;
-        color: yellow;
-        background-color: white;
-    }
-    footer{
-        position: relative;
-    }
-    .email_link{
-        position: absolute;
-        left:25%;
-        display: flex;
-        color: rgb(12, 14, 2);
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 3.5vw;
-        font-size: 3.2vw;
-        bottom: 1vh;
-        padding: 1.5%;
-    }
-    .email_link a{
-        text-align: center;
-    }
-    .email_link:hover{
-        background-color: rgba(255, 255, 255, 1.0);
-    }
+  hr {
+    width: 50%;
+    text-align: left;
+    margin-left: 0px;
+    height: 0.25vh;
+    color: yellow;
+    background-color: white;
+  }
+  footer {
+    position: relative;
+  }
+  .email_link {
+    position: absolute;
+    left: 25%;
+    display: flex;
+    color: rgb(12, 14, 2);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3.5vw;
+    font-size: 3.2vw;
+    bottom: 1vh;
+    padding: 1.5%;
+  }
+  .email_link a {
+    text-align: center;
+  }
+  .email_link:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
 
-    .email_link a{
-        font-style: normal;
-    }
+  .email_link a {
+    font-style: normal;
+  }
 
-    .twitter_icon{
-        position: absolute;
-        bottom: 1vh;
-        right:4%;
-        width:5vw;
-        background-color: rgba(240, 241, 235, 0.9); 
-        filter: opacity(90%) brightness(90%);
-        padding: 1.3vw 1.3vw 0vw 1.3vw;
-        border-radius: 4.5vw;
-    }
-    .github_icon{
-        position: absolute;
-        bottom: 1vh;
-        left:15%;
-        width:5vw;
-        background-color: rgba(240, 241, 235, 0.9); 
-        filter: opacity(90%) brightness(90%);
-        padding: 1.3vw 1.3vw 0vw 1.3vw;
-        border-radius: 4.5vw;
-    }
-    .linkedin_icon{
-        position: absolute;
-        bottom: 1vh;
-        left:5%;
-        width:5vw;
-        background-color: rgba(240, 241, 235, 0.9); 
-        filter: opacity(90%) brightness(90%);
-        padding: 1.3vw 1.3vw 0vw 1.3vw;
-        border-radius: 4.5vw;
-    }
-    .insta_icon{
-        position: absolute;
-        bottom: 1vh;
-        right:14%;
-        width:5vw;
-        background-color: rgba(240, 241, 235, 0.9); 
-        filter: opacity(90%) brightness(90%);
-        padding: 1.3vw 1.3vw 0vw 1.3vw;
-        border-radius: 4.5vw;
-    }
+  .twitter_icon {
+    position: absolute;
+    bottom: 1vh;
+    right: 4%;
+    width: 5vw;
+    background-color: rgba(240, 241, 235, 0.9);
+    filter: opacity(90%) brightness(90%);
+    padding: 1.3vw 1.3vw 0vw 1.3vw;
+    border-radius: 4.5vw;
+  }
+  .github_icon {
+    position: absolute;
+    bottom: 1vh;
+    left: 15%;
+    width: 5vw;
+    background-color: rgba(240, 241, 235, 0.9);
+    filter: opacity(90%) brightness(90%);
+    padding: 1.3vw 1.3vw 0vw 1.3vw;
+    border-radius: 4.5vw;
+  }
+  .linkedin_icon {
+    position: absolute;
+    bottom: 1vh;
+    left: 5%;
+    width: 5vw;
+    background-color: rgba(240, 241, 235, 0.9);
+    filter: opacity(90%) brightness(90%);
+    padding: 1.3vw 1.3vw 0vw 1.3vw;
+    border-radius: 4.5vw;
+  }
+  .insta_icon {
+    position: absolute;
+    bottom: 1vh;
+    right: 14%;
+    width: 5vw;
+    background-color: rgba(240, 241, 235, 0.9);
+    filter: opacity(90%) brightness(90%);
+    padding: 1.3vw 1.3vw 0vw 1.3vw;
+    border-radius: 4.5vw;
+  }
 
-    .icon:hover{
-        filter: opacity(100%) brightness(100%);
-    }
+  .icon:hover {
+    filter: opacity(100%) brightness(100%);
+  }
 
+  .social_img {
+    display: none;
+  }
+  .go_up {
+    bottom: 12vh;
+    right: 3vw;
+    position: fixed;
+    padding: 0.3vw;
+    width: 7%;
+    border-radius: 50%;
+    background-color: rgb(240, 241, 234);
+    filter: opacity(90%) brightness(90%);
+  }
 
-    .go_up{
-        bottom: 12vh;
-        right: 3vw;
-        position: fixed;
-        padding:0.3vw;
-        width: 7%;
-        border-radius: 50%;
-        background-color: rgb(240, 241, 234);
-        filter: opacity(90%) brightness(90%);
-    }
+  .go_up:hover {
+    filter: opacity(100%) brightness(100%);
+  }
 
-    .go_up:hover{
-        filter: opacity(100%) brightness(100%);
-    }
+  .profile_sun {
+    position: relative;
+    width: 80%;
+    margin: 6vh 10% 2vh 10%;
+    padding-top: 80%;
+  }
+  .profile_pic {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+    border-radius: 100%;
+  }
+  .profile_centre {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 25.5%;
+  }
+  .profile_centre:hover {
+    border-radius: 100%;
+    box-shadow: -0.4vw 0.4vw rgba(14, 13, 13, 0.75);
+  }
+  .top_left_menu {
+    transform: rotate(-33deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    top: 17%;
+    left: 17%;
+  }
+  .top_right_menu {
+    transform: rotate(33deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    top: 18%;
+    left: 64%;
+  }
 
+  .bottom_left_menu {
+    transform: rotate(56deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    bottom: 36%;
+    left: -1%;
+  }
+  .bottom_right_menu {
+    transform: rotate(-60deg);
+    color: rgb(14, 13, 13);
+    position: absolute;
+    bottom: 38%;
+    right: 3%;
+  }
+  .bottom_menu {
+    color: rgb(14, 13, 13);
+    position: absolute;
+    bottom: 11%;
+    right: 31%;
+  }
+  .pro_menu {
+    font-size: 12px;
+    font-size: 4.5vw;
+  }
+  .personal_info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 3vw;
+    background: rgba(35, 34, 43, 0.95);
+    text-align: center;
+    font-weight: 600;
+  }
+  .name_card {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 2vh;
+  }
 
-    .profile_sun{
-        position: relative;
-        width:80%;
-        margin: 6vh 10% 2vh 10% ;
-        padding-top: 80%;
-    }
-    .profile_pic{
-        position: absolute;
-        width: 90%;
-        top: 5%;
-        bottom: 5%;
-        right: 5%;
-        left:5%;
-        border-radius: 100%;
-    }
-    .profile_centre{
-        position: absolute;
-        width: 50%;
-        top: 25%;
-        left: 25.5%;
-    }
-    .profile_centre:hover{
-        border-radius: 100%;
-        box-shadow: -0.4vw 0.4vw rgba(14, 13, 13, 0.75);
+  .my_name {
+    font-size: 5vw;
+    font-family: "Expletus Sans", cursive;
+    margin-bottom: 0.5vh;
+  }
+  .college,
+  .branch {
+    font-size: 2.5vw;
+    font-family: "Hind Guntur", sans-serif;
+  }
+  .year {
+    font-size: 2vw;
+    font-family: "Hind Guntur", sans-serif;
+  }
+  .resume {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 42.5%;
+    width: 15%;
+    background-color: rgba(228, 243, 151, 0.9);
+    border-radius: 8%;
+  }
+  .resume:hover {
+    border-radius: 8%;
+    background-color: rgba(238, 248, 187, 0.9);
+    box-shadow: -0.5vh 0.5vw rgba(3, 32, 87, 0.8);
+  }
 
-    }
-    .top_left_menu{
-        transform:rotate(-33deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        top: 17%;
-        left:17%;
+  .resume_logo {
+    width: 80%;
+    margin-top: 0.75vh;
+    margin-bottom: -0.25vh;
+  }
 
+  .sub_sections {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+  }
 
-    }
-    .top_right_menu{
-        transform:rotate(33deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        top: 18%;
-        left:64%;
-    }
+  .sec_head {
+    font-size: 5vw;
+    font-family: "Expletus Sans", cursive;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: -1vh;
+  }
 
-    .bottom_left_menu{
-        transform:rotate(56deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        bottom: 36%;
-        left:-1%;
+  .sub_sec {
+    margin-top: 1vh;
+    background-color: rgba(35, 34, 43, 0.95);
+    padding: 2%;
+    border-radius: 1.5vw;
+    display: flex;
+    flex-direction: column;
+  }
 
-    }
-    .bottom_right_menu{
-        transform:rotate(-60deg);
-        color: rgb(14, 13, 13);
-        position: absolute;
-        bottom: 38%;
-        right:3%;
+  .sub_head {
+    font-size: 3vw;
+    margin-bottom: 1%;
+    font-family: "Bree Serif", serif;
+    font-weight: 550;
+    padding-left: 0.5vw;
+  }
+  .sub_head a {
+    font-weight: bold;
+  }
 
-    }
-    .bottom_menu{
-        color: rgb(14, 13, 13);
-        position: absolute;
-        bottom: 11%;
-        right:31%;
-        
-    }
-    .pro_menu{
-        font-size: 12px;
-        font-size: 4.5vw;
-    }
-    .personal_info{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 20%;
-        width: 60%;
-        margin-top: 20px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        border-radius: 3vw;
-        background: rgba(35, 34, 43, 0.95);
-        text-align: center;
-        font-weight: 600;
+  .sub_desc,
+  .sub_demo {
+    font-family: "Rubik", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    padding: 0.5vw;
+  }
 
-    }
-    .name_card{
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        padding-top: 2vh;
-    }
+  .skill_logo {
+    width: 40%;
+    height: auto;
+    border-radius: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .more,
+  .tech_used {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill_block {
+    width: 32%;
+    margin-left: 1%;
+    padding-top: 0.5vh;
+  }
+  .skill_name,
+  .cert_name,
+  .project_name {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .skill_name {
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 2.2vw;
+    margin-top: 0.25vh;
+    padding: 0vh 2vw;
+  }
+  .cert_name,
+  .project_name {
+    color: black;
+    margin: 5px 3px;
+    padding: 1px 1px;
+  }
 
-    .my_name{
-        font-size: 5vw;
-        font-family: 'Expletus Sans', cursive;
-        margin-bottom: 0.5vh;
-    }
-    .college,.branch{
-        font-size: 2.5vw;
-        font-family: 'Hind Guntur', sans-serif;
-    }
-    .year{
-        font-size:2vw;
-        font-family: 'Hind Guntur', sans-serif;
-    }
-    .resume{
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        margin-left: 42.5%;
-        width:15%;
-        background-color: rgba(228, 243, 151, 0.9);
-        border-radius: 8%;
-    }
-    .resume:hover{
-        border-radius: 8%;
-        background-color: rgba(238, 248, 187, 0.9);
-        box-shadow: -0.5vh 0.5vw rgba(3, 32, 87, 0.8);
+  .project_name {
+    font-size: 4vw;
+    font-family: "Expletus Sans", cursive;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .cert_name {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-family: "Bree Serif", serif;
+    font-size: 2.2vw;
+  }
 
-    }
+  .cert_block {
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 10px;
+    padding-top: 0.5vh;
+    background-color: rgba(245, 247, 235, 0.8);
+    border-radius: 1vw;
+    padding-bottom: 0.5vh;
+  }
 
-    .resume_logo{
-        width:80%;
-        margin-top: 0.75vh;
-        margin-bottom: -0.25vh;
-    }
+  .cert_block:hover {
+    box-shadow: -5px 5px rgba(14, 13, 13, 0.75);
+  }
 
-    .sub_sections{
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 1vh;
-        margin-bottom: 2vh;
-    }
+  .cert_img {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 7px;
+    border-color: black;
+  }
+  .sub_project {
+    padding-top: 2vh;
+  }
+  .project_block {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 3vh;
+    margin-bottom: 3vh;
+    padding-top: 2vh;
+    background-color: rgba(245, 247, 235, 0.8);
+    border-radius: 1.5vw;
+    padding-bottom: 0.5vh;
+  }
 
-    .sec_head{
-        font-size: 5vw;
-        font-family: 'Expletus Sans', cursive;
-        font-style: normal;
-        font-weight: bold;
-        margin-bottom: -1vh;
-    }
+  .project_img,
+  .project_video {
+    width: 60%;
+    height: 23.5vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 1.5vw;
+    border-color: black;
+  }
 
+  .project_video iframe {
+    width: 100%;
+    height: 23.5vw;
+    border-radius: 1.5vw;
+  }
 
-    .sub_sec{
-        margin-top: 1vh;
-        background-color: rgba(35, 34, 43, 0.95);
-        padding: 2%;
-        border-radius: 1.5vw;
-        display: flex;
-        flex-direction: column;
-    }
+  .tech_block {
+    margin-left: 5%;
+    width: 90%;
+  }
 
+  .tech_used {
+    float: left;
+    border-radius: 5px;
+    background-color: rgba(25, 27, 31, 0.8);
+    color: rgb(240, 241, 234);
+    margin: 0.3vh 0.5vw;
+    padding: 0.6vh 1.2vw;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    width: auto;
+    font-size: 2.5vw;
+  }
 
-    .sub_head{
-        font-size: 3vw;
-        margin-bottom: 1%;
-        font-family: 'Bree Serif', serif;
-        font-weight: 550;
-        padding-left: 0.5vw;
+  .project_desc {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Hind Guntur", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    color: rgb(25, 26, 24);
+    float: right;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+  }
 
-    }
-    .sub_head a{
-        font-weight: bold;
-    }
+  .codebase {
+    border-radius: 0.5vw;
+    width: 20%;
+    margin-left: 75%;
+    bottom: 10px;
+    filter: brightness(110%);
+  }
 
-    .sub_desc,.sub_demo{
-        font-family:'Rubik', sans-serif;
-        font-size: 2.5vw;
-        font-weight: 500;
-        padding: 0.5vw;
-    }
-
-    .skill_logo{
-        width:40%;
-        height: auto;
-        border-radius: 100%;
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-    .more,.tech_used{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .skill_block{
-        width: 32%;
-        margin-left: 1%;
-        padding-top: 0.5vh;
-    }
-    .skill_name , .cert_name,.project_name{
-        margin-top: 5px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .skill_name{
-        font-family: 'Hind Guntur', sans-serif;
-        font-size: 2.2vw;
-        margin-top: 0.25vh;
-        padding: 0vh 2vw;
-    }
-    .cert_name, .project_name{
-        color: black;
-        margin: 5px 3px;
-        padding: 1px 1px;
-    }
-
-    .project_name{
-        font-size: 4vw;
-        font-family: 'Expletus Sans', cursive;
-        width: 90%;
-        margin-left: 5%;
-    }
-    .cert_name{
-        margin-top: 0vh;
-        margin-bottom: 0vh;
-        padding-left: 1vw;
-        padding-right:1vw ;
-        font-family: 'Bree Serif', serif;
-        font-size: 2.2vw;
-    }
-
-    .cert_block{
-        width: 30%;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-        margin-bottom: 10px;
-        padding-top: 0.5vh;
-        background-color: rgba(245, 247, 235, 0.8);
-        border-radius: 1vw;
-        padding-bottom: 0.5vh;
-    }
-
-    .cert_block:hover{
-        box-shadow: -5px 5px rgba(14, 13, 13, 0.75);
-    }
-
-    .cert_img{
-        width:90%;
-        height: auto;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 7px;
-        border-color: black;
-    }
-    .sub_project{
-        padding-top: 2vh;
-    }
-    .project_block{
-        width: 95%;
-        margin-left: 2.5%;
-        margin-bottom: 3vh;
-        margin-bottom: 3vh;
-        padding-top: 2vh;
-        background-color: rgba(245, 247, 235, 0.8);
-        border-radius: 1.5vw;
-        padding-bottom: 0.5vh;
-
-    }
-
-    .project_img,.project_video{
-        width:60%;
-        height: 23.5vw;
-        margin-left: 20%;
-        margin-right: 20%;
-        border-radius: 1.5vw;
-        border-color: black;
-    }
-
-    .project_video iframe{
-        width: 100%;
-        height: 23.5vw;
-        border-radius: 1.5vw;
-    }
-
-    .tech_block{
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .tech_used{
-        float: left;
-        border-radius: 5px;
-        background-color: rgba(25, 27, 31, 0.8);
-        color: rgb(240, 241, 234);
-        margin: 0.3vh 0.5vw;
-        padding: 0.6vh 1.2vw;
-        text-align: center;
-        font-family: 'Rubik', sans-serif;
-        font-weight: bold;
-        width:auto;
-        font-size: 2.5vw;
-    }
-
-    .project_desc{
-        margin-left: 5%;
-        margin-right: 5%;
-        font-family: 'Hind Guntur', sans-serif;
-        font-size: 3vw;
-        font-weight: 500;
-        color: rgb(25, 26, 24);
-        float: right;
-        margin-top: 0.5vh;
-        margin-bottom: 0.5vh;
-    }
-
-    .codebase{
-        border-radius: 0.5vw;
-        width: 20%;
-        margin-left: 75%;
-        bottom:10px;
-        filter: brightness(110%);
-    }
-
-    .codebase:hover{
-        box-shadow: -0.5vw 0.5vh rgba(14, 13, 13, 0.75);
-    }
+  .codebase:hover {
+    box-shadow: -0.5vw 0.5vh rgba(14, 13, 13, 0.75);
+  }
 }
