@@ -155,7 +155,7 @@ a:active {
   .social_img {
     top: 0;
     left: 0;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
     padding-left: 100%;
     margin-left: 5%;
     margin-top: 1.3vh;
@@ -164,10 +164,11 @@ a:active {
     border-radius: 1vw;
     color: black;
     z-index: -5;
-    width: 11vw;
+    width: max-content;
     display: none;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
+    text-align: center;
   }
 
   .icon:hover {
