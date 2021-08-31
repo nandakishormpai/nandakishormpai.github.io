@@ -112,6 +112,35 @@ a:active {
   font-family: "Expletus Sans", cursive;
   font-weight: bold;
 }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.topnav .nav_icon {
+  display: none;
+}
 @media screen and (min-width: 767px) {
   .email_link {
     position: fixed;
@@ -202,7 +231,6 @@ a:active {
     padding-top: 40%;
   }
   .profile_pic {
-    position: absolute;
     width: 90%;
     top: 5%;
     bottom: 5%;
@@ -211,10 +239,8 @@ a:active {
     border-radius: 100%;
   }
   .profile_centre {
-    position: absolute;
-    width: 50%;
-    top: 25%;
-    left: 25.5%;
+    width: 25%;
+    margin: 15px 0px;
   }
   .profile_centre:hover {
     border-radius: 100%;
@@ -263,9 +289,9 @@ a:active {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 60px;
     margin-left: 25%;
     width: 50%;
-    margin-top: 20px;
     font-family: Georgia, "Times New Roman", Times, serif;
     border-radius: 10px;
     background: rgba(35, 34, 43, 0.95);
@@ -489,6 +515,27 @@ a:active {
   }
 }
 @media (max-width: 767px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.nav_icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .nav_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
   hr {
     width: 50%;
     text-align: left;
@@ -571,11 +618,11 @@ a:active {
     display: none;
   }
   .go_up {
-    bottom: 12vh;
+    bottom: 9vh;
     right: 3vw;
     position: fixed;
     padding: 0.3vw;
-    width: 7%;
+    width: 8%;
     border-radius: 50%;
     background-color: rgb(240, 241, 234);
     filter: opacity(90%) brightness(90%);
@@ -601,10 +648,8 @@ a:active {
     border-radius: 100%;
   }
   .profile_centre {
-    position: absolute;
-    width: 50%;
-    top: 25%;
-    left: 25.5%;
+    width: 40%;
+    margin-top: 1.5vh;
   }
   .profile_centre:hover {
     border-radius: 100%;
@@ -655,7 +700,7 @@ a:active {
     flex-wrap: wrap;
     margin-left: 20%;
     width: 60%;
-    margin-top: 20px;
+    margin-top: 4vh;
     font-family: Georgia, "Times New Roman", Times, serif;
     border-radius: 3vw;
     background: rgba(35, 34, 43, 0.95);
@@ -676,11 +721,11 @@ a:active {
   }
   .college,
   .branch {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-family: "Hind Guntur", sans-serif;
   }
   .year {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family: "Hind Guntur", sans-serif;
   }
   .resume {
@@ -728,7 +773,7 @@ a:active {
   }
 
   .sub_head {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-bottom: 1%;
     font-family: "Bree Serif", serif;
     font-weight: 550;
@@ -741,8 +786,8 @@ a:active {
   .sub_desc,
   .sub_demo {
     font-family: "Rubik", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 500;
+    font-size: 2.75vw;
+    font-weight: 200;
     padding: 0.5vw;
   }
 
@@ -865,7 +910,7 @@ a:active {
     padding: 0.6vh 1.2vw;
     text-align: center;
     font-family: "Rubik", sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     width: auto;
     font-size: 2.5vw;
   }
