@@ -181,6 +181,10 @@ a:active {
     filter: opacity(90%) brightness(90%);
   }
 
+  .yticon {
+    height: auto;
+  }
+
   .social_img {
     top: 0;
     left: 0;
@@ -298,6 +302,7 @@ a:active {
     text-align: center;
     font-weight: 600;
     padding: 10px;
+    line-height: 1.5;
   }
   .name_card {
     width: 90%;
