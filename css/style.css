@@ -20,8 +20,8 @@ body {
   border-radius: 50%;
   border-top: 16px solid #fcfeff;
   border-bottom: 16px solid #fcfeff;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
